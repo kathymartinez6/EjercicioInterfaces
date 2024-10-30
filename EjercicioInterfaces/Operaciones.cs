@@ -10,27 +10,26 @@ namespace EjercicioInterfaces
 
         public double AreaRectangulo(double largo, double ancho)
         {
-            throw new NotImplementedException();
+            return largo * ancho;
         }
 
         public double AreaTriangulo(double baseTriangulo, double altura)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Imprimir()
-        {
-
+            return (baseTriangulo * altura) / 2;
         }
 
         public double LongitudCircunferencia(double radio)
         {
-            throw new NotImplementedException();
+            return 2 * Math.PI * radio;
         }
 
         public double VolumenCubo(double lado)
         {
-            throw new NotImplementedException();
+            return Math.Pow(lado, 3);
+        }
+        public void Imprimir()
+        {
+            Console.WriteLine("Resultados de las operaciones:");
         }
     }
 }
